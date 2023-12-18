@@ -1,0 +1,72 @@
+.form {
+    background-color: #75b4e3;
+    padding: 10px 10px;
+}
+
+.weather {
+    background-color: #00CCFF;
+    padding: 10px 0;
+}
+
+.sub {
+    background-color: #85B0FF;
+    padding: 10px 0;
+}
+
+h1 {
+
+   text-shadow: 0 0 10px;
+    color: #fff;
+}
+  
+.background-image {
+    background-image: url("../assets/Weather-Banner.jpg");
+    position: relative;
+}
+
+   
+.form-heading {
+    border-bottom: 1px solid black;
+}
+
+.search-form {
+    font-weight: bold;
+}
+
+.search-button {
+    width: 135px;
+    margin-bottom: 10px;
+}
+
+#search-button {
+    text-decoration: none;
+}
+
+.today {
+    text-align: left;
+}
+.weatherContent {
+    background-color: #00CCFF;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 36px;
+}
+
+.search-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.city-name {
+    font-size: 30px;
+}
+
+.forecast-date {
+    font-size: 18px;
+}
+
+#forecast-heading {
+    margin: 10px;
+}
