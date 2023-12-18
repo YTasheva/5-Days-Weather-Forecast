@@ -14,7 +14,6 @@
 }
 
 h1 {
-
    text-shadow: 0 0 10px;
     color: #fff;
 }
@@ -25,11 +24,11 @@ h1 {
 }
 
    
-.form-heading {
+.search-form {
     border-bottom: 1px solid black;
 }
 
-.search-form {
+.search-input {
     font-weight: bold;
 }
 
@@ -38,20 +37,12 @@ h1 {
     margin-bottom: 10px;
 }
 
-#search-button {
-    text-decoration: none;
-}
+.form-history {
+    border: 1px solid red;
+} 
 
 .today {
     text-align: left;
-}
-.weatherContent {
-    background-color: #00CCFF;
-    padding: 10px 0;
-}
-
-.navbar-brand {
-    font-size: 36px;
 }
 
 .search-header {

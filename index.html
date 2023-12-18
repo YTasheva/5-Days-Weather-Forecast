@@ -28,7 +28,7 @@
   <div class="container-fluid" style="max-width: 1400px">
     <div class="row">
       <aside class="col-lg-2 col-sm-12">
-        <h2 id="form-heading" class="mt-1 h3 pb-auto text-centre  form-label">
+        <h2 id="form-heading" class="mt-1 h4 pb-auto text-centre form-inline">
           Search for a City:
         </h2>
         <form id="search-form" class="form">
@@ -37,19 +37,19 @@
               <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
                 aria-labelledby="form-heading" aria-controls="today forecast" />
               <div class="input-group-append">
-                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
+                <button type="submit" class="btn search-button w-100" id="search-button" aria-label="submit search">
                   Search
-                  <i class="fas fa-search"></i>
-                </button>
+                  <i class="fas fa-search"></i></button>
                 <hr class="hr weather-hr" />
               </div>
             </div>
           </div>
         </form>
+          
         <div class="list-group" id="history"></div>
       </aside>
 
-      <div class="weather col-lg-10 col-sm-12 order--1">
+      <div class="weather col-lg-10 col-sm-12">
         <section id="search-results" class="mt-1"></section>
         <section>
           <ul id="search-results-list" class="list-group list-inline"></ul>
