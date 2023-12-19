@@ -3,8 +3,9 @@ var searchInput = document.querySelector("#search-input");
 var searchForm = document.querySelector("#search-form");
 var searchBtn = document.querySelector("#search-button");
 var historyList = document.querySelector("#history");
+var cityForecastData = document.querySelector("#cityNameData");
 var todayWeather = document.querySelector("#today");
-var forecast = document.querySelector(".forecast");
+var forecast = document.querySelector("#5DayForecast");
 var today = moment().format('L');
 var historyList = []
 
@@ -16,25 +17,53 @@ var forecast5DayURL = "https://api.openweathermap.org/data/2.5/forecast?q=london
 
 // function for current forecast
 function currentForecast(city) {
-    fetch(forecast5DayURL) 
+    fetch(apiGeoURL) 
         .then(function(cityForecastResponse) {
             return response.json();
 })
         .then(function(cityForecastData) {
         console.log(cityForecastResponse)
 
-        var iconcode = cityForecastResponse.weather[0].icon;
+        $("#weatherContent").css("display", "block");
+        $("#cityForecastData").empty();
+
+        var iconCode = cityForecastResponse.weather[0].icon;
         var iconurl = `https://openweathermap.org/img/w/10d.png`;
         $('#wicon').attr('src', iconurl);
 
+// Current city forecast: weather wind, temperature, humidity, date
+var cityForecastData = $(`
+<h2 id="cityForecastData">
+    ${cityForecastResponse.name} ${today} <img src="${iconurl}" alt="${cityForecastResponse.weather[0].description}" />
+</h2>
+<p>Temperature: ${cityForecastResponse.main.temp} °C</p>
+<p>Wind Speed: ${cityForecastResponse.wind.speed} KPH</p>
+<p>Humidity: ${cityForecastResponse.main.humidity}\%</p>
+`);
 
-// Display forecast data for cu
-    displayForecast(data);
+$("#cityNameData").append(cityForecastData);
+
+//  5-day forecast
+function futureForecast(lat, lon) {
+    fetch(forecast5DayURL) 
+    .then(function(futureForecastResponse) {
+        return response.json();
+        console.log(futureForecastResponse);
 })
-.catch(function(error) {
-    console.log(error);
-});
-}
+    .then(function(futureForecastData) {
+    console.log(futureForecastData)
+    $("#5DayForecast").empty();
+
+    for (let i = 1; i < 6; i++) {
+        var cityData = {
+            date: futureForecastResponse.daily[i].dt,
+            icon: futureForecastResponse.daily[i].weather[0].icon,
+            temp: futureForecastResponse.daily[i].temp.day,
+            humidity: futureForecastResponse.daily[i].humidity
+        };
+
+        var currDate = moment.unix(cityData.date).format("DD/MM/YYYY");
+        var iconurl = `<img src="https://openweathermap.org/img/w/${cityData.icon}.png" alt="${futureForecastResponse.daily[i].weather[0].main}" />`;
 
 
 
