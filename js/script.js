@@ -65,7 +65,24 @@ function futureForecast(lat, lon) {
         var currDate = moment.unix(cityData.date).format("DD/MM/YYYY");
         var iconurl = `<img src="https://openweathermap.org/img/w/${cityData.icon}.png" alt="${futureForecastResponse.daily[i].weather[0].main}" />`;
 
+// Display the 5-day forecast - day, temperature, wind, humidity
+var future5Day = $(`
+                <div class="pl-3">
+                    <div class="card pl-3 pt-3 mb-3 bg-primary text-light" style="width: 12rem;>
+                        <div class="card-body">
+                            <h5>${currDate}</h5>
+                            <p>${iconurl}</p>
+                            <p>Temp: ${cityInfo.temp} °C</p>
+                            <p>Humidity: ${cityData.humidity}\%</p>
+                        </div>
+                    </div>
+                <div>
+            `);
 
+            $("#5DayForecast").append(future5Day);
+        }
+    }); 
+}
 
 // Event listener
 $("#search-button").on("click", function() {
