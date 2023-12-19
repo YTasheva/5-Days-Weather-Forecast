@@ -3,7 +3,6 @@ var searchInput = document.querySelector("#search-input");
 var searchForm = document.querySelector("#search-form");
 var searchBtn = document.querySelector("#search-button");
 var historyList = document.querySelector("#history");
-var cityForecastData = document.querySelector("#cityNameData");
 var todayWeather = document.querySelector("#today");
 var forecast = document.querySelector("#5DayForecast");
 var today = moment().format('L');
@@ -24,8 +23,8 @@ function currentForecast(city) {
         .then(function(cityForecastData) {
         console.log(cityForecastResponse)
 
-        $("#weatherContent").css("display", "block");
-        $("#cityForecastData").empty();
+        $("#today").css("display", "block");
+        $("#todayWeather").empty();
 
         var iconCode = cityForecastResponse.weather[0].icon;
         var iconurl = `https://openweathermap.org/img/w/10d.png`;
@@ -41,7 +40,7 @@ var cityForecastData = $(`
 <p>Humidity: ${cityForecastResponse.main.humidity}\%</p>
 `);
 
-$("#cityNameData").append(cityForecastData);
+$("#today").append(cityForecastData);
 
 //  5-day forecast
 function futureForecast(lat, lon) {
