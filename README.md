@@ -63,5 +63,5 @@
 
 ## Author
 
-[Yuliya Tasheva](https://github.com/YTasheva)https://github.com/YTasheva)
+[Yuliya Tasheva](https://github.com/YTasheva)
   
