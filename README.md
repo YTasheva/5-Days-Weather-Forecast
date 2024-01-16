@@ -8,6 +8,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built With](#built-with)
+- [Installation](#installation)
 - [Licence](#licence)
 - [Author](#author)
 
@@ -55,8 +56,16 @@
    
 ### Built With
 
-- JavaScript, HTML, CSS, Bootstrap
+- JavaScript, HTML, CSS, Bootstrap, jQuery,Server-Side API - OpenWeather API
 
+## Installation
+
+* Download or clone the repository.
+
+* Open the `.HTML` file through your web browser to view.
+
+* Use Visual Studio Code or similar source-code editor to run the code.
+ 
 ## Licence
 
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
