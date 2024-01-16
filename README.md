@@ -8,6 +8,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built With](#built-with)
+- [Licence](#licence)
 - [Author](#author)
 
 ## Overview
@@ -55,4 +56,12 @@
 ### Built With
 
 - JavaScript, HTML, CSS, Bootstrap
+
+## Licence
+
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt=""></a>
+
+## Author
+
+[Yuliya Tasheva](https://github.com/YTasheva)https://github.com/YTasheva)
   
