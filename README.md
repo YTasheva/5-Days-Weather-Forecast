@@ -51,8 +51,8 @@
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- [Deployed Application](https://ytasheva.github.io/Weather-Forecast-Dashboard/)
+- [GitHub Repo](https://github.com/YTasheva/Weather-Forecast-Dashboard)
    
 ### Built With
 
@@ -72,5 +72,8 @@
 
 ## Author
 
-[Yuliya Tasheva](https://github.com/YTasheva)
-  
+- GitHub - [Yuliya Tasheva](https://github.com/YTasheva)
+
+> [YTasheva.com](#) &nbsp;&middot;&nbsp;
+> LinkedIn [@YTasheva](https://github.com/YTasheva) &nbsp;&middot;&nbsp;
+> Email [ytashevagit@gmail.com](#) &nbsp;&middot;&nbsp;
