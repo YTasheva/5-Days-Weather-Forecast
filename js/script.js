@@ -6,7 +6,7 @@ var historyList = document.querySelector("#history");
 var todayWeather = document.querySelector("#today");
 var forecast = document.querySelector("#5DayForecast");
 var today = moment().format('L');
-var historyList = []
+
 
 
 // API key for the OpenWeather
@@ -17,8 +17,9 @@ var forecast5DayURL = "https://api.openweathermap.org/data/2.5/forecast?q=london
 // function for current forecast
 function currentForecast(city) {
     fetch(apiGeoURL) 
-        .then(function(cityForecastResponse) {
-            return response.json();
+        .then(function(cityForecastResponse)
+         {
+            return cityForecastResponse.json();
 })
         .then(function(cityForecastData) {
         console.log(cityForecastResponse)
@@ -46,7 +47,7 @@ $("#today").append(cityForecastData);
 function futureForecast(lat, lon) {
     fetch(forecast5DayURL) 
     .then(function(futureForecastResponse) {
-        return response.json();
+        return futureForecastResponse.json();
         console.log(futureForecastResponse);
 })
     .then(function(futureForecastData) {
@@ -120,6 +121,3 @@ $(document).ready(function() {
         console.log(`Last searched city: lastCitySearch`);
     }
 });
-
-
-   
