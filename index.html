@@ -13,10 +13,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -32,56 +31,32 @@
     <!-- max-width for ultra wide resolutions -->
     <div class="container-fluid" style="max-width: 1400px">
       <div class="row">
-        <aside class="form col-lg-2 col-sm-12 mt-3 text-centre">
-          <section class="pb-4 text-centre form-label">
-            Search for a City:
-          
-          <form id="search-form" class="form">
-            <div class="form-inline form-group">
-              <div class="input-group" id="submitArea">
+        <aside class="form col-lg-2 col-sm-12 mt-1 text-centre">
+          <section class="form-search pb-4 text-centre">
+            <form class="form-ask">
+            <label for="search-city"></label>Search for a City:</label>
                 <input
-                  class="form-input weather-search"
                   type="text"
-                  id="search-input"
-                  placeholder="Enter City / Location"
-                  required
-                  aria-labelledby="form-heading"
-                  aria-controls="today forecast"
-                />
-                <div class="input-group-append" id="buttonArea">
+                  name="search-city"
+                  id="search-city"
+                  value="">
+          </form>                
                   <button
                     type="submit"
                     class="btn search-button bg-primary mt-3"
-                    id="search-button"
-                    aria-label="submit search"
-                  >
-                    Search
-                    <i class="fas fa-search"></i>
-                  </button>
-                  <hr class="hr weather-hr" />
-                </div>
-              </div>
-            </div>
-          </form>
+                    id="btn-search-city"
+                  >Search</button>
+        </section>
           <section class="form-history mt-4">
           <h6>Search History:</h6>
           <div class="history-group d-flex flex-column" id="history"></div>
           <button type="button" class="btn btn-link" id="btn-clear">Clear History</button>
           <!-- append "list-group" to each list item -->
            </section>
-        </aside>
-
-        <div class="weather col-lg-10 col-sm-12 mt-3 text-center">
-          <section
-            id="today"
-            class="mt-3"
-            role="region"
-            aria-live="polite"
-          ></section>
-          
-          <main class="card">
-            <div class="today-main text-center"></div>
-            <div class="card-body" id="fiveday-forecast d-inline-flex p-2 bd-highlight flex-wrap justify-content-lg-around text-left"></div>
+          </aside>
+          <main class="weather col-lg-10 col-sm-12 mt-1">
+            <section class="today text-center"></section>
+            <section class="fiveday-forecast d-inline-flex p-2 bd-highlight flex-wrap justify-content-lg-around text-left"></section>
            <!--- 5 Day Forecast --->
            </main>
           </div>
@@ -100,10 +75,9 @@
                 </section>
         </div>
       </div>
-    </div>
 
     <!--- Footer --->
-    <footer class="container-fluid bg-primary text-white text-center">
+    <footer class="container-fluid bg-primary text-white text-center mt-1">
       <div class="row">
         <div class="col-12">
           <p>
