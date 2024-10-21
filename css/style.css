@@ -1,6 +1,6 @@
 .form {
     background-color: #75b4e3;
-    padding: 30px 4px;
+    padding: 10px 10px;
 }
 
 .weather {
@@ -14,6 +14,7 @@
 }
 
 h1 {
+    font-family: 'Oswald', sans-serif;
    text-shadow: 0 0 10px;
     color: #fff;
 }
@@ -24,61 +25,71 @@ h1 {
 }
 
    
-.search-form {
+.form-search {
     border-bottom: 1px solid black;
 }
 
-.search-input {
+.form-ask label {
     font-weight: bold;
 }
 
-.search-button {
+.form-ask input {
     width: 135px;
     margin-bottom: 10px;
 }
 
-  
-.form-history {
-    border: 1px solid red;
-} 
-
-#todayForecast {
-    text-align: left;
-    background-color: #42aaf9;
+#btn-clear {
+    text-decoration: none;
 }
 
-.search-header {
-    font-size: 24px;
+.today {
+    text-align: left;
+}
+
+.today h2 {
+    text-align: center;
     font-weight: bold;
 }
 
-.city-name {
-    font-size: 30px;
+.today li {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-.forecast-date {
-    font-size: 18px;
+.green, .yellow, .orange, .red, .violet {
+    padding: 3px 5px;
+    border-radius: 10px;
 }
 
-#forecast-heading {
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
+
+.violet {
+    background-color: violet;
+}
+
+#five-day-title {
     margin: 10px;
 }
 
-#searchResults,
-#cityDetail,
-.card {
-    background-color: #5A6C73!important;
+.card-text {
+    list-style-type: none;
 }
 
-#searchResults {
-    height: 100vh;
-}
-
-#fiveDay .card {
-    border: 1px solid rgb(14, 14, 14)!important;
-}
-
-#searchHistory li {
-    background-color: #97A6A4;
-    color: #11111b!important;
+.card-body li .card-text {
+    list-style-type: none;
 }
