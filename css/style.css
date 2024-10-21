@@ -42,8 +42,9 @@ h1 {
     border: 1px solid red;
 } 
 
-.today {
+#todayForecast {
     text-align: left;
+    background-color: #42aaf9;
 }
 
 .search-header {
@@ -74,10 +75,10 @@ h1 {
 }
 
 #fiveDay .card {
-    border: 1px solid white!important;
+    border: 1px solid rgb(14, 14, 14)!important;
 }
 
 #searchHistory li {
     background-color: #97A6A4;
-    color: #f8f8ff!important;
+    color: #11111b!important;
 }
