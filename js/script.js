@@ -8,15 +8,15 @@ var todayWeatherEl = document.querySelector(".today");
 var fiveDayEl = document.querySelector(".fiveday-forecast");
 var fiveDaytemp = document.querySelector(".card-body");
 var btnsubscribe = document.querySelector(".btn-subscribe");
-var apiKey = "4f585493f941e0eeef3857860aa417e6";
+var apiKey = "dde671ce0faac451b9eaab661597d442";
 
 // loading after
 window.addEventListener("load", function () {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "8c7f5505a9mshbeda1d20024b8f4p11cfd0jsn6f20bc102b9e",
-      "X-RapidAPI-Host": "spott.p.rapidapi.com",
+      "X-RapidApi-Key": "8c7f5505a9mshbeda1d20024b8f4p11cfd0jsn6f20bc102b9e",
+      "X-RapidApi-Host": "spott.p.rapidapi.com",
     },
   };
 
